@@ -1,0 +1,53 @@
+//config
+$nameSpace:'pk' !default;
+$state-prefix: 'is-' !default;
+
+//font
+$font-size-default: 14px !default;
+$font-size-small: 12px !default;
+$font-size-lager: 16px !default;
+$font-weight-default: 400 !default;
+$font-weight-bold: 500 !default;
+$font-weight-light: 300 !default;
+
+// color
+$primary-color: #3fa2ff !default; // 主题色 
+$success-color: #67c421 !default; // 成功 atd：#b7eb8f el：#67c23a
+$info-color:#465b76 !default;
+$warning-color:#e99c0d !default;
+$danger-color:#f45858 !default;
+$text-color: rgba(0, 0, 0, 0.65)!default; // 主文本色
+$white-color: #fff !default;
+$black-color: #000000 !default;
+
+// border
+$border-color: #dcdfe6!default;
+$border-width: 1px !default;
+$border-style: solid !default;
+$border-radius-base: 4px !default;
+$border-base: $border-width $border-style $border-color !default;
+
+/*
+  button
+*/
+// button-default
+$button-font-size: $font-size-default !default;
+$button-font-weight: $font-weight-default !default;
+$button-padding-vertical: 6px !default;
+$button-padding-horizontal: 20px !default;
+$button-border-radius: $border-radius-base !default;
+
+// button-small
+$button-font-size-small: $font-size-small !default;
+$button-padding-vertical-small: #{$button-padding-vertical - 2} !default;
+$button-padding-horizontal-small: #{$button-padding-horizontal - 4} !default;
+$button-border-radius-small: #{$border-radius-base - 1} !default;
+
+// button-lager
+$button-font-size-lager: $font-size-lager !default;
+$button-padding-vertical-lager: #{$button-padding-vertical + 2} !default;
+$button-padding-horizontal-lager: #{$button-padding-horizontal + 4} !default;
+$button-border-radius-lager: #{$border-radius-base + 1} !default;
+
+$button-hover-tint-percent: 20% !default;
+$button-active-shade-percent: 10% !default;

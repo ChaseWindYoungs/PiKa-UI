@@ -1,0 +1,45 @@
+@import "globalVars.scss";
+
+// 通过 #{} 插值语句可以在选择器或属性名中使用变量 [https://www.sass.hk/docs/]
+// 在mixin中定义变量，只能在该mixin中使用
+@mixin nameSpace($block) {
+  $NS: $nameSpace + "-" + $block !global;
+
+  .#{$NS} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+@mixin font($fs, $fw) {
+  // font-size: $button-font-size;
+  font: {
+    size: $fs;
+    weight: $fw;
+  }
+}
+
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 1px 2px #000000;
+}
