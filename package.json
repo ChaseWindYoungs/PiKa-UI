@@ -1,12 +1,17 @@
 {
-  "name": "pika-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "pikaqw-ui",
+  "private": false,
+  "version": "0.0.18",
   "type": "module",
+  "main": "./dist/pikaqw-ui.umd.cjs",
+  "files": [
+    "./dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pub": "pnpm build && npm publish"
   },
   "dependencies": {
     "@types/node": "^18.11.18",
@@ -17,6 +22,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue-macros/volar": "^0.5.7",
+    "fs-extra": "^11.1.0",
     "sass-loader": "^13.2.0",
     "typescript": "^4.9.3",
     "unplugin-vue-macros": "^1.1.1",

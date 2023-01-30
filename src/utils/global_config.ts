@@ -2,7 +2,7 @@ import type { App } from "vue";
 
 const CLASS_PREFIX = "pk";
 const GLOBAL_CONFIG_NAME = "_pk";
-const COMPONENT_PREFIX = "PK";
+const COMPONENT_PREFIX = "Pk";
 
 
 export interface UIOptions {

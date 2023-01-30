@@ -1,4 +1,4 @@
-# PiKa-UI
+# PiKaQw-UI
 
 an Vue3-Vite-Typescript-Scss project, for build vue3 programe UI
 

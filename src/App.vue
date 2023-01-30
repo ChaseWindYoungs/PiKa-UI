@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 // import PKButton from '@/components/Button'
 import { ref} from "vue";
 const test =(event: MouseEvent) => {
@@ -17,8 +16,7 @@ const refBtn = ref<HTMLElement | null>(null);
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" /> -->
+  </div> -->
   <div>
     <p>按钮风格</p>
     <PKButton ref="refBtn" @click="test">按钮</PKButton>
